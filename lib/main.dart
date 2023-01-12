@@ -1,6 +1,5 @@
 import 'package:demomap/getlocation.dart';
 import 'package:demomap/place_picker.dart';
-import 'package:demomap/web_socket.dart';
 import 'package:flutter/material.dart';
 import 'dart:io' show Platform;
 
@@ -53,16 +52,6 @@ class MainScreenApp extends StatelessWidget {
             context,
             MaterialPageRoute(
                 builder: (context) => const GetLocation()),
-          );
-        },
-      ),
-      ListShow(
-        title: "Web Socket",
-        onTap: (){
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => const WebSocketApp()),
           );
         },
       ),
